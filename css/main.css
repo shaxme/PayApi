@@ -411,6 +411,13 @@ a {
 .header__list {
   display: flex;
   align-items: center;
+  padding-left: 40px;
+}
+
+.header__menu {
+  display: none;
+  border: none;
+  background-color: transparent;
 }
 
 .header__item {
@@ -483,6 +490,10 @@ a {
   .header__btn {
     display: none;
   }
+  .header__menu {
+    display: block;
+    cursor: pointer;
+  }
 }
 .intro {
   padding-top: 50px;
@@ -505,16 +516,18 @@ a {
 }
 
 .intro__heading {
-  font-family: "DM Serif Display", sans-serif;
+  font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
   line-height: 72px;
   letter-spacing: -0.553846px;
   color: #36536B;
+  padding-bottom: 25px;
 }
 
 .intro__form {
+  font-family: "DM Serif Display", sans-serif;
   position: relative;
   width: 445px;
   margin-bottom: 16px;
