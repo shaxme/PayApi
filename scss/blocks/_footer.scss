@@ -89,7 +89,6 @@
   .flex {
     display: flex;
     flex-direction: column;
-   }
   }
 
   .footer__list {
@@ -117,6 +116,7 @@
   .footer__icon--item + .footer__icon--item {
     padding-left: 25px;
   }
+}
 
 @media (max-width: 610px) {
 
