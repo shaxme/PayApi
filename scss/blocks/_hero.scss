@@ -1,0 +1,114 @@
+.hero {
+  background-image: url(/img/hero-img.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0% 0%;
+  background-color: #1B262F;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.hero__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__box{
+  max-width: 445px;
+  width: 100%;
+}
+
+.hero__title{
+  margin-bottom: 24px;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #FBFCFE;
+}
+
+.hero__text{
+  font-family: 'Popins', sans-serif;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #FBFCFE;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.hero__link{
+  font-family: 'Popins', sans-serif;
+  padding: 15px 30px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: transparent;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  border: 1px solid #FBFCFE;
+  border-radius: 24px;
+  color: #FBFCFE;
+  transition: 0.5s ease;
+}
+
+.hero__link:hover{
+  color: #1B262F;
+  background-color: #FFFFFF;
+  transition: 0.5s ease;
+}
+
+.hero__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 536px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.hero__item + .hero__item + .hero__item + .hero__item {
+  padding-top: 54px;
+}
+
+@media (max-width: 698px) {
+
+  .hero {
+    background-image: url(/img/repo-hero.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 0%;
+  }
+
+  .work__box {
+    max-width: 457px;
+    text-align: center;
+  }
+
+  .hero__inner {
+    flex-direction: column-reverse;
+  }
+
+  .hero__list {
+    padding-bottom: 70px;
+  }
+
+  .hero__heading {
+    max-width: 457px;
+    text-align: center;
+  }
+
+  .hero__describe {
+    max-width: 456px;
+    text-align: center;
+  }
+
+  .hero__item + .hero__item + .hero__item {
+    padding-top: 45px;
+  }
+}

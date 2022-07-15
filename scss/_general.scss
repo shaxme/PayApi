@@ -1,0 +1,30 @@
+*{
+  box-sizing: border-box;
+}
+
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body{
+  background-image: url(/img/intro-img.png);
+  background-repeat: no-repeat;
+  background-size: 673px 656px;
+  background-position: 100% 0%;
+  font-family: 'Public Sans';
+  background-color: #EDF3F8;;
+  margin: 0px;
+  color:#6c8294;
+}
+
+img{
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
