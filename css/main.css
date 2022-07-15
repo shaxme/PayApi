@@ -308,40 +308,23 @@ template {
   display: none;
 }
 
-/* public-sans-regular - latin */
 @font-face {
   font-family: "Public Sans";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/public-sans-v13-latin-regular.woff2") format("woff2"), url("../fonts/public-sans-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/public-sans-v13-latin-regular.woff2") format("woff2"), url("../fonts/public-sans-v13-latin-regular.woff") format("woff");
 }
-/* public-sans-600 - latin */
-@font-face {
-  font-family: "Public Sans";
-  font-style: normal;
-  font-weight: 600;
-  src: local(""), url("../fonts/public-sans-v13-latin-600.woff2") format("woff2"), url("../fonts/public-sans-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* public-sans-500 - latin */
-@font-face {
-  font-family: "Public Sans";
-  font-style: normal;
-  font-weight: 500;
-  src: local(""), url("../fonts/public-sans-v13-latin-500.woff2") format("woff2"), url("../fonts/public-sans-v13-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* public-sans-700 - latin */
 @font-face {
   font-family: "Public Sans";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../fonts/public-sans-v13-latin-700.woff2") format("woff2"), url("../fonts/public-sans-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/public-sans-v13-latin-700.woff2") format("woff2"), url("../fonts/public-sans-v13-latin-700.woff") format("woff");
 }
-/* dm-serif-display-regular - latin */
 @font-face {
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/dm-serif-display-v10-latin-regular.woff2") format("woff2"), url("../fonts/dm-serif-display-v10-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/dm-serif-display-v10-latin-regular.woff2") format("woff2"), url("../fonts/dm-serif-display-v10-latin-regular.woff") format("woff");
 }
 * {
   box-sizing: border-box;
@@ -1146,30 +1129,37 @@ a {
     align-items: center;
   }
   .flex {
-    display: block;
-  }
-  .footer__list {
-    display: block;
-    padding-top: 40px;
-    text-align: center;
-  }
-  .footer__item {
-    padding-left: 0px;
-  }
-  .footer__item + .footer__item {
-    padding-top: 31px;
-    padding-left: 0px;
-  }
-  .footer__item + .footer__item + .footer__item {
-    padding-bottom: 40px;
-  }
-  .icon {
-    margin: 0;
-  }
-  .footer__icon--item + .footer__icon--item {
-    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
   }
 }
+.footer__list {
+  display: block;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.footer__item {
+  padding-left: 0px;
+}
+
+.footer__item + .footer__item {
+  padding-top: 31px;
+  padding-left: 0px;
+}
+
+.footer__item + .footer__item + .footer__item {
+  padding-bottom: 40px;
+}
+
+.icon {
+  margin: 0;
+}
+
+.footer__icon--item + .footer__icon--item {
+  padding-left: 25px;
+}
+
 @media (max-width: 610px) {
   .footer {
     background-image: url(/img/repo-footer.png);
